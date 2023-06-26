@@ -16,7 +16,7 @@ return (
         <Router>
         <Navbar />
         <Routes>
-        <Route path='/' exact element ={<Home/>}></Route>
+        <Route path='/mywebsite' exact element ={<Home/>}></Route>
         <Route path='/about' element ={<About/>}></Route>
         <Route path='/events' element ={<Events/>}></Route>
         <Route path='/annual' element ={<AnnualReport/>}></Route>

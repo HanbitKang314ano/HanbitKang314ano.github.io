@@ -16,7 +16,7 @@ const Navbar = () => {
         <Bars />
         
         <NavMenu>
-          <NavLink to="/">
+          <NavLink to="/mywebsite">
             <img style={{ width: '140px', height: 'auto', float: 'left' }} src={logo} alt="Logo" />
           </NavLink>
           <NavLink to='/about' activeStyle>
