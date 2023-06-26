@@ -1,0 +1,16 @@
+things to do in the website:
+- make sure to change the text font
+
+
+
+
+
+
+
+color scheme i am using:
+- FCE5CD
+- E69138
+- 783f04
+
+main text font:
+- font-family: Courier, monospace;
