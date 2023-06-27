@@ -13,7 +13,7 @@ import SignUp from './pages/signup';
 function App() {
 return (
     <div>
-        <Router>
+        <Router basename="/mywebsite">
         <Navbar />
         <Routes>
         <Route path='/mywebsite' exact element ={<Home/>}></Route>
