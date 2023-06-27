@@ -24,6 +24,9 @@ return (
                 }}
                 >
                 <h1>Welcome to Hanbit Kang's Portfolio!</h1>
+                <br/>
+                <b> I have recently started developing this website so please be on the lookout for more changes in the near future! (June 26, 2023)</b>
+                <br/>
                 <p>
                     Hello! My name is Hanbit Kang and I graduated from Texas A&M University in 2023 with a B.S. degree in Computer Science.
                 </p>
@@ -32,10 +35,10 @@ return (
                     in development, all the new updates and things I will implement will be in the 'Events' section.
                 </p>
                 <p>
-                    Also, any feedback about my website will be very appriciated!
+                    Also, any feedback about my website will be very appriciated! :)
                 </p>
             </div>
-            <img style={{ width: '800px', height: 'auto', float: 'left', margin: '20px' }} src={profile_picture} alt="profile_picture" />
+            <img style={{ aspectRatio: 3/4, maxWidth: '80%', maxHeight: '80%', float: 'left', margin: '20px' }} src={profile_picture} alt="profile_picture" />
         </div>
     </div>
 );
