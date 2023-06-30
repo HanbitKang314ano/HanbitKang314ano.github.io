@@ -5,7 +5,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 const events = [
 	{ title: 'Add Event Calendar (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
 	{ title: 'Display Event on the Side (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
-	{ title: 'Home Image Not Working Properly', allDay: true, start: new Date("2023-07-02 00:00:00") },
+	{ title: 'Home Image Not Working Properly (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
 	{ title: 'Work on Project Page', allDay: true, start: new Date("2023-07-02 01:00:00") },
 	{ title: 'Start on Blog Page', allDay: true, start: new Date("2023-07-02 02:00:00") },
 	{ title: 'Login Implementation', allDay: true, start: new Date("2023-07-09 00:00:00") },
