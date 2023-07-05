@@ -54,7 +54,13 @@ const Projects = () => {
 				<p>(place the Give n Share mobile app visual here (if possible))</p>
 				<br/>
 				<h2> My Portfolio </h2>
-				<p>This website is my portfolio! I used react as my main frontend code and github pages as my deployment.</p>
+				<p style={{textIndent: '50px'}}>
+					This website is my portfolio! I used React as my main frontend code and github pages as my deployment service. 
+					I have no backend implementation at the moment.
+				</p>
+				<p style={{textIndent: '50px'}}>
+					This is the link to my github repository of the code that I am working with: <a href="https://github.com/HanbitKang314ano/mywebsite">Github Repo</a>
+				</p>
 			</div>
 			<div style={{ margin: '50px' }}>
 			</div>

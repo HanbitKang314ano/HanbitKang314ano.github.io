@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnnualReport = () => {
+const Feedbacks = () => {
 return (
 	<div
 	style={{
@@ -15,4 +15,4 @@ return (
 );
 };
 
-export default AnnualReport;
+export default Feedbacks;

@@ -35,7 +35,7 @@ return (
                     in development, all the new updates and things I will implement will be in the 'Events' section.
                 </p>
                 <p>
-                    Also, any feedback about my website will be very appriciated! :)
+                    Also, submit any feedbacks about my website in the 'Feedbacks' section. Anything will be very appriciated! :)
                 </p>
             </div>
             <img style={{ aspectRatio: 3/4, maxWidth: '80%', maxHeight: '80%', float: 'left', margin: '20px' }} src={profile_picture} alt="profile_picture" />

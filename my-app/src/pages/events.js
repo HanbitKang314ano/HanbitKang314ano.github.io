@@ -6,9 +6,11 @@ const events = [
 	{ title: 'Add Event Calendar (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
 	{ title: 'Display Event on the Side (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
 	{ title: 'Home Image Not Working Properly (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
-	{ title: 'Work on Project Page', allDay: true, start: new Date("2023-07-02 01:00:00") },
-	{ title: 'Start on Blog Page', allDay: true, start: new Date("2023-07-02 02:00:00") },
-	{ title: 'Login Implementation', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Start on Project Page (DONE)', allDay: true, start: new Date("2023-07-02 01:00:00") },
+	{ title: 'Start on Blog Page (DONE)', allDay: true, start: new Date("2023-07-02 02:00:00") },
+	{ title: 'Login Implementation (SUSPENDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Create Feedback Page (DONE)', allDay: true, start: new Date("2023-07-09 01:00:00") },
+	{ title: 'Feedback Functionality Implemented', allDay: true, start: new Date("2023-07-09 02:00:00") },
 ]
 
 const Events = () => {
@@ -63,12 +65,32 @@ const Events = () => {
 					eventClick={handleEventClick}
 				/>
 			</div>
-			{openEvent && 
+			<div
+				style={{
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'Left',
+					alignItems: 'Left',
+					height: '100vh',
+					fontFamily: 'Courier, monospace'
+				}}
+				>
+				{openEvent && 
+					<div style={{ margin: '50px' }}>
+						<b> Description: </b>
+						<p>{eventTitle}</p>
+					</div>
+				}
 				<div style={{ margin: '50px' }}>
-					<b> Description: </b>
-					<p>{eventTitle}</p>
+					<b> Future tasks: </b>
+					<p>- Login Implementation (suspended indefinitely until needed)</p>
+					<p>- Create Feedback Page</p>
+					<p>- Feedback Functionality Implemented</p>
+					<p>- Create Complete Sudoku Solver</p>
+					<p>- Integrate Sudoku Solver to Portfolio</p>
+					<p>- Better Website Styling</p>
 				</div>
-			}
+			</div>
 		</div>
 	);
 };

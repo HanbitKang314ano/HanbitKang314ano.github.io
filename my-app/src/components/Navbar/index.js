@@ -25,14 +25,14 @@ const Navbar = () => {
           <NavLink to='/events' activeStyle>
             Events
           </NavLink>
-          <NavLink to='/annual' activeStyle>
-            Annual Report
-          </NavLink>
           <NavLink to='/projects' activeStyle>
             Projects
           </NavLink>
           <NavLink to='/blogs' activeStyle>
             Blogs
+          </NavLink>
+          <NavLink to='/feedbacks' activeStyle>
+            Feedbacks
           </NavLink>
           <NavLink to='/sign-up' activeStyle>
             Sign Up
