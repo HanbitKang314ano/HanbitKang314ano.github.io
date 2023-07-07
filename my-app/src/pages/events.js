@@ -10,7 +10,7 @@ const events = [
 	{ title: 'Start on Blog Page (DONE)', allDay: true, start: new Date("2023-07-02 02:00:00") },
 	{ title: 'Login Implementation (SUSPENDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
 	{ title: 'Create Feedback Page (DONE)', allDay: true, start: new Date("2023-07-09 01:00:00") },
-	{ title: 'Feedback Functionality Implemented', allDay: true, start: new Date("2023-07-09 02:00:00") },
+	{ title: 'Feedback Functionality Implemented (DONE)', allDay: true, start: new Date("2023-07-09 02:00:00") },
 ]
 
 const Events = () => {
@@ -83,12 +83,10 @@ const Events = () => {
 				}
 				<div style={{ margin: '50px' }}>
 					<b> Future tasks: </b>
-					<p>- Login Implementation (suspended indefinitely until needed)</p>
-					<p>- Create Feedback Page</p>
-					<p>- Feedback Functionality Implemented</p>
 					<p>- Create Complete Sudoku Solver</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
 					<p>- Better Website Styling</p>
+					<p>- Login Implementation (suspended indefinitely until needed)</p>
 				</div>
 			</div>
 		</div>
