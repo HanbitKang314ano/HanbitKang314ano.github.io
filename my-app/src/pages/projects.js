@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {PyScriptProvider, PyScript} from 'pyscript-react';
 
 const Projects = () => {
+	const [lang, setLang] = useState("c++");
+	const [input, setInput] = useState("");
+	const [result, setResult] = useState('Submit Code to See Result');
+	const [code, setCode] = useState(""); // GET CODE FROM MY C++ FILE, FIND A WAY TO LOAD IT
+
+	function onSubmitHandler(eventHandler) {
+        
+    }
+
 	return (
 		<div
 			style={{
@@ -25,30 +34,31 @@ const Projects = () => {
 				>
 				<h1>These are some of the projects I have worked on...</h1>
 				<h2> Sudoku Solver </h2>
+				{/*
+				<div className="col-12 mt-5">
+					<p className="lead d-block my-0">Code your code here</p>
+					<textarea type="text" id="code">
+					</textarea>
+				</div>
+				<div className="col-12 mt-3">
+					<p className="lead d-block my-0">Provide Input</p>
+					<textarea type="text" id="input">
+					</textarea>
+				</div>
+				<div className="col-12 mt-3">
+					<button className="btn btn-success" onClick={onSubmitHandler(this)}>Solve Sudoku!</button>
+				</div>
+				<div className="row">
+					<div className="col-12 my-5">
+						<p className="lead d-block my-0">Solved Sudoku</p>
+						<textarea type="text" id="result" disabled={true}>
+						</textarea>
+					</div>
+				</div>
+				*/}
 				<p>(place the sudoku solver program here, if possible... the sudoku is still in the making... 
 					there are already many recursive/backtracking and brute force solving algorithms that exist online, so i am trying to create a new algorithm that uses algorithms
 					that people would use to actually solve the sudoku)</p>
-				{/*
-				<div 
-					dangerouslySetInnerHTML={{__html:  `
-						<py-script>
-						for i in range(3):
-							print(i)
-					
-						def func():
-							print('function works')
-						</py-script>
-					`}}
-				/>
-				<PyScriptProvider>
-					<PyScript>
-						for i in range(3):
-							print(i)
-						def func():
-							print('function works')
-					</PyScript>
-				</PyScriptProvider>
-				*/}
 				<br/>
 				<h2> Give n Share (Senior Capstone) </h2>
 				<p>(place the Give n Share mobile app visual here (if possible))</p>

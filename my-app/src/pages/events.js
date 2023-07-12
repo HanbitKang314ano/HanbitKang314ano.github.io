@@ -8,9 +8,13 @@ const events = [
 	{ title: 'Home Image Not Working Properly (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
 	{ title: 'Start on Project Page (DONE)', allDay: true, start: new Date("2023-07-02 01:00:00") },
 	{ title: 'Start on Blog Page (DONE)', allDay: true, start: new Date("2023-07-02 02:00:00") },
-	{ title: 'Login Implementation (SUSPENDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Login Implementation (NOT NEEDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
 	{ title: 'Create Feedback Page (DONE)', allDay: true, start: new Date("2023-07-09 01:00:00") },
 	{ title: 'Feedback Functionality Implemented (DONE)', allDay: true, start: new Date("2023-07-09 02:00:00") },
+	{ title: 'Create Resume page (DONE)', allDay: true, start: new Date("2023-07-16 02:00:00") },
+	{ title: 'Upload Resume (DONE)', allDay: true, start: new Date("2023-07-16 00:00:00") },
+	{ title: 'Write Experiences', allDay: true, start: new Date("2023-07-16 01:00:00") },
+	{ title: 'Deploy Sudoku Project', allDay: true, start: new Date("2023-07-23 00:00:00") },
 ]
 
 const Events = () => {
@@ -76,7 +80,7 @@ const Events = () => {
 				}}
 				>
 				{openEvent && 
-					<div style={{ margin: '50px' }}>
+					<div style={{ margin: '50px', marginTop: '150px' }}>
 						<b> Description: </b>
 						<p>{eventTitle}</p>
 					</div>
@@ -85,8 +89,7 @@ const Events = () => {
 					<b> Future tasks: </b>
 					<p>- Create Complete Sudoku Solver</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
-					<p>- Better Website Styling</p>
-					<p>- Login Implementation (suspended indefinitely until needed)</p>
+					<p>- Better Website Styling, Design, and Structure</p>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,7 @@ import Events from './pages/events';
 import Feedbacks from './pages/feedbacks';
 import Projects from './pages/projects';
 import Blogs from './pages/blogs';
-import SignUp from './pages/signup';
+import Resume from './pages/resume';
 
 function App() {
 return (
@@ -22,7 +22,7 @@ return (
         <Route path='/feedbacks' element ={<Feedbacks/>}></Route>
         <Route path='/projects' element ={<Projects/>}></Route>
         <Route path='/blogs' element ={<Blogs/>}></Route>
-        <Route path='/sign-up' element ={<SignUp/>}></Route>
+        <Route path='/resume' element ={<Resume/>}></Route>
         </Routes>
         </Router>
     </div>
