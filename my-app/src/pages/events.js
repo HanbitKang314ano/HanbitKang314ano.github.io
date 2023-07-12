@@ -90,6 +90,7 @@ const Events = () => {
 					<p>- Create Complete Sudoku Solver</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
 					<p>- Better Website Styling, Design, and Structure</p>
+					<p>- Update Readme.md</p>
 				</div>
 			</div>
 		</div>
