@@ -2,24 +2,9 @@ import React, { useState } from 'react';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 
-const events = [
-	{ title: 'Add Event Calendar (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
-	{ title: 'Display Event on the Side (DONE)', allDay: true, start: new Date("2023-06-26 17:29:23") },
-	{ title: 'Home Image Not Working Properly (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
-	{ title: 'Start on Project Page (DONE)', allDay: true, start: new Date("2023-07-02 01:00:00") },
-	{ title: 'Start on Blog Page (DONE)', allDay: true, start: new Date("2023-07-02 02:00:00") },
-	{ title: 'Login Implementation (NOT NEEDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
-	{ title: 'Create Feedback Page (DONE)', allDay: true, start: new Date("2023-07-09 01:00:00") },
-	{ title: 'Feedback Functionality Implemented (DONE)', allDay: true, start: new Date("2023-07-09 02:00:00") },
-	{ title: 'Create Resume page (DONE)', allDay: true, start: new Date("2023-07-16 02:00:00") },
-	{ title: 'Upload Resume (DONE)', allDay: true, start: new Date("2023-07-16 00:00:00") },
-	{ title: 'Write Experiences', allDay: true, start: new Date("2023-07-16 01:00:00") },
-	{ title: 'Deploy Sudoku Project', allDay: true, start: new Date("2023-07-23 00:00:00") },
-]
 
 const Events = () => {
-	const [openEvent, setOpenEvent] = useState(false);
-	const [eventTitle, setEventTitle] = useState('');
+	const [eventTitle, setEventTitle] = useState('click one on the calendar to view...');
 
 	function renderEventContent(eventInfo) {
 		return (
@@ -35,7 +20,6 @@ const Events = () => {
 	function handleEventClick(eventInfo) {
 		const clickedEventTitle = eventInfo.event.title;
 		setEventTitle(clickedEventTitle);
-		setOpenEvent(true);
 	}
 
 	return (
@@ -79,12 +63,10 @@ const Events = () => {
 					fontFamily: 'Courier, monospace'
 				}}
 				>
-				{openEvent && 
-					<div style={{ margin: '50px', marginTop: '150px' }}>
-						<b> Description: </b>
-						<p>{eventTitle}</p>
-					</div>
-				}
+				<div style={{ margin: '50px', marginTop: '150px' }}>
+					<b> Description: </b>
+					<p>{eventTitle}</p>
+				</div>
 				<div style={{ margin: '50px' }}>
 					<b> Future tasks: </b>
 					<p>- Create Complete Sudoku Solver</p>
@@ -97,5 +79,19 @@ const Events = () => {
 	);
 };
 
+const events = [
+	{ title: 'Add Event Calendar (DONE)', allDay: true, start: new Date("2023-06-26 00:00:00") },
+	{ title: 'Display Event on the Side (DONE)', allDay: true, start: new Date("2023-06-26 00:00:00") },
+	{ title: 'Home Image Not Working Properly (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
+	{ title: 'Start on Project Page (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
+	{ title: 'Start on Blog Page (DONE)', allDay: true, start: new Date("2023-07-02 00:00:00") },
+	{ title: 'Login Implementation (NOT NEEDED)', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Create Feedback Page (DONE)', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Feedback Functionality Implemented (DONE)', allDay: true, start: new Date("2023-07-09 00:00:00") },
+	{ title: 'Create Resume page (DONE)', allDay: true, start: new Date("2023-07-11 00:00:00") },
+	{ title: 'Upload Resume (DONE)', allDay: true, start: new Date("2023-07-11 00:00:00") },
+	{ title: 'Write Experiences (DONE)', allDay: true, start: new Date("2023-07-14 00:00:00") },
+	{ title: 'Deploy Sudoku Project', allDay: true, start: new Date("2023-07-23 00:00:00") },
+]
 
 export default Events;
