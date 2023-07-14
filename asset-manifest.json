@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.3e4f3627.css",
-    "main.js": "/mywebsite/static/js/main.79558470.js",
+    "main.css": "/mywebsite/static/css/main.12cf9980.css",
+    "main.js": "/mywebsite/static/js/main.aaedd093.js",
+    "static/media/minuti.JPEG": "/mywebsite/static/media/minuti.cf449e8bfa06ec9454bd.JPEG",
     "static/media/intro_pic.jpg": "/mywebsite/static/media/intro_pic.ca0b1cc432830cef2e52.jpg",
+    "static/media/research_pic2.png": "/mywebsite/static/media/research_pic2.2b183d88f2153eed64bb.png",
+    "static/media/research_pic1.png": "/mywebsite/static/media/research_pic1.0b56c81655b4cad694c1.png",
     "static/media/Resume.pdf": "/mywebsite/static/media/Resume.00f1a68cf6115c2bf035.pdf",
     "static/media/Logo.png": "/mywebsite/static/media/Logo.70c17377aeb9624f40dd.png",
     "index.html": "/mywebsite/index.html",
-    "main.3e4f3627.css.map": "/mywebsite/static/css/main.3e4f3627.css.map",
-    "main.79558470.js.map": "/mywebsite/static/js/main.79558470.js.map"
+    "main.12cf9980.css.map": "/mywebsite/static/css/main.12cf9980.css.map",
+    "main.aaedd093.js.map": "/mywebsite/static/js/main.aaedd093.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e4f3627.css",
-    "static/js/main.79558470.js"
+    "static/css/main.12cf9980.css",
+    "static/js/main.aaedd093.js"
   ]
 }
