@@ -54,6 +54,7 @@ return (
 					- Maintain the quality and progress of the ongoing construction of the Samsung semiconductor manufacturing facility at Taylor.
 					<br/>
 					<br/>
+					- Currently working with SECAI's clients and contractors to complete Phase 1 of Taylor Semiconductor Construction.
 				</p>
 
 				<h3>Arbin Instruments: Software Engineer Intern</h3>

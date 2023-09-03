@@ -23,7 +23,26 @@ return (
 				}}
 				>
 				<h1>Here are some things that I write for fun...</h1>
-				<div style={{ border: '1px solid black', padding: '10px' }}>
+				<div style={{ border: '1px solid black', padding: '10px', margin: '20px' }}>
+					<h2>First Full Time Job</h2>
+					<p style={{ margin: '1px' }}>Date: 9/3/2023</p>
+					<p style={{textIndent: '50px'}}>
+						I started working at Samsung three weeks ago and the working experience as my first full time position is great. I really like my team
+						and the atmosphere I am in. Although being a Document Controller is very different from Computer Science, I take this as a learning opportunity 
+						and a time to just gain work experience.
+					</p>
+					<p style={{textIndent: '50px'}}>
+						While I know I have to work at Samsung, I want to continue to work on my coding skills and continue to develop this website. 
+						I don't want to get lazy and continue to work so that I can ultimately get into the software engineering field, which is my dream job. 
+						Although I will be very occupied with work and adjusting to a new life style at Austin, I will continue to make updates to this website 
+						from time to time. This means that as time progresses, there will be a lot less (if not, none) events in the 'Events' section.
+
+					</p>
+					<p style={{textIndent: '50px'}}>
+						Thank you for reading this as always! :)
+					</p>
+				</div>
+				<div style={{ border: '1px solid black', padding: '10px', margin: '20px' }}>
 					<h2>Making Portfolio Experience</h2>
 					<p style={{ margin: '1px' }}>Date: 7/5/2023</p>
 					<p style={{textIndent: '50px'}}>

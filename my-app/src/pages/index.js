@@ -36,7 +36,7 @@ return (
             <br/>
             <div style={{position: 'absolute', bottom: 0, left: 0}}>
                 <p>
-                    Also, submit any feedbacks about my website in the 'Feedbacks' section. Anything will be very appriciated! :)
+                    Please submit any feedbacks about my website in the 'Feedbacks' section. Anything will be very appriciated!
                 </p>
                 <b>First Published: June 26, 2023</b>
                 <br/>
