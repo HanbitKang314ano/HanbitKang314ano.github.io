@@ -69,7 +69,7 @@ const Events = () => {
 				</div>
 				<div style={{ margin: '50px' }}>
 					<b> Future tasks: </b>
-					<p>- Create Complete Sudoku Solver</p>
+					<p>- Create Sudoku Solver Project</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
 					<p>- Better Website Styling, Design, and Structure</p>
 					<p>- Update Readme.md</p>

@@ -49,6 +49,13 @@ return (
 				}}
 				>
 				<h1>Experience</h1>
+				<h3>Samsung E&C America, Inc.: Document Controller (QS)</h3>
+				<p style={{margin: '10px'}}> 
+					- Maintain the quality and progress of the ongoing construction of the Samsung semiconductor manufacturing facility at Taylor.
+					<br/>
+					<br/>
+				</p>
+
 				<h3>Arbin Instruments: Software Engineer Intern</h3>
 				<p style={{margin: '10px'}}> 
 					- Help design code that automates battery specification document as the battery is tested using .NET Framework C#.
