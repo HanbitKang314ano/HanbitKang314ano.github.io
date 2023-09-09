@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://HanbitKang314ano.github.io/mywebsite",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fullcalendar/core": "^6.1.8",
