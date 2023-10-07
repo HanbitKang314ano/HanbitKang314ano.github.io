@@ -13,7 +13,7 @@ import Resume from './pages/resume';
 function App() {
 return (
     <div>
-        <Router basename='mywebsite'>
+        <Router basename='/'>
         <Navbar />
         <Routes>
         <Route path='' exact element ={<Home/>}></Route>

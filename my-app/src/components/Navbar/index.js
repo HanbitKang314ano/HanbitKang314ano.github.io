@@ -19,22 +19,22 @@ const Navbar = () => {
           <NavLink to="/">
             <img style={{ width: '140px', height: 'auto', float: 'left' }} src={logo} alt="Logo" />
           </NavLink>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='/about'>
             About
           </NavLink>
-          <NavLink to='/events' activeStyle>
+          <NavLink to='/events'>
             Events
           </NavLink>
-          <NavLink to='/projects' activeStyle>
+          <NavLink to='/projects'>
             Projects
           </NavLink>
-          <NavLink to='/blogs' activeStyle>
+          <NavLink to='/blogs'>
             Blogs
           </NavLink>
-          <NavLink to='/resume' activeStyle>
+          <NavLink to='/resume'>
             Resume/Experience
           </NavLink>
-          <NavLink to='/feedbacks' activeStyle>
+          <NavLink to='/feedbacks'>
             Feedbacks
           </NavLink>
           {/* Second Nav */}
