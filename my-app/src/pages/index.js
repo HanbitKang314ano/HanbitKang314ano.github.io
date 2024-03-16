@@ -16,7 +16,8 @@ return (
         justifyContent: 'Left',
         alignItems: 'Left',
         height: '100vh',
-        fontFamily: 'Courier, monospace'
+        fontFamily: 'Courier, monospace',
+        color: 'white'
     }}
     >
         <div
@@ -25,7 +26,8 @@ return (
             justifyContent: 'Left',
             alignItems: 'Left',
             height: '100vh',
-            fontFamily: 'Courier, monospace'
+            fontFamily: 'Courier, monospace',
+            color: 'white'
         }}
         >
             <div
@@ -35,23 +37,17 @@ return (
                     justifyContent: 'Left',
                     alignItems: 'Left',
                     height: '100vh',
-                    fontFamily: 'Courier, monospace'
+                    fontFamily: 'Courier, monospace',
+                    color: 'white'
                 }}
                 >
-                <h1 style={{fontSize: '40px', marginBottom: '0px', textAlign: 'center',}}>Hanbit Kang's Portfolio</h1>
+                <h1 style={{fontSize: '70px', marginBottom: '0px',}}>Hello, I'm Hanbit Kang</h1>
                 <br/>
-                <h2 style={{}}>Introduction</h2>
-                <p style={{ marginBottom: '0px'}}> Hello! My name is Hanbit Kang and I graduated from Texas A&M University in May 2023 with a B.S. degree in Computer Science. 
-                I am currently working at Samsung E&C America Inc. as a Document Controller (QS) in Taylor, Texas. </p>
-                <br/>
-                <div style={{width: '50%', alignSelf: 'center', marginTop: '20px'}}>
-                    <NavLink to='/events' style={{height: '5%'}}>
-                        View website progress in the 'Events' section.
-                    </NavLink>
-                </div>
+                <h1 style={{ fontSize: '25px', marginBottom: '0px'}}> B.S. in Computer Science at Texas A&M University </h1>
+                <h1 style={{ fontSize: '25px', marginBottom: '0px'}}> Quantity Surveyor at Samsung E&C America Inc. in Taylor, Texas. </h1>
                 <br/>
             </div>
-            <img style={{ aspectRatio: 3/4, maxWidth: '80%', maxHeight: '80%', float: 'left', margin: '20px' }} src={profile_picture} alt="profile_picture" />
+            <img style={{ aspectRatio: 3/4, maxWidth: '90%', maxHeight: '80%', float: 'right', margin: '50px' }} src={profile_picture} alt="profile_picture" />
         </div>
         <div style={{position: 'relative', bottom: '0', left: '0', width: '100%', textAlign: 'center', padding: '10px'}}>
             <p>
@@ -60,7 +56,7 @@ return (
             <div style={{fontSize: '10px'}}>
                 <b>First Published: June 26, 2023</b>
                 <br/>
-                <b>Most Recent Update: September 3, 2023</b>
+                <b>Most Recent Update: March 16, 2024</b>
             </div>
         </div>
     </div>

@@ -7,7 +7,6 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
-import logo from '../../images/Logo.png';
   
 const Navbar = () => {
   return (
@@ -17,7 +16,7 @@ const Navbar = () => {
         
         <NavMenu>
           <NavLink to="/">
-            <img style={{ width: '140px', height: 'auto', float: 'left' }} src={logo} alt="Logo" />
+            Hanbit Kang
           </NavLink>
           <NavLink to='/about'>
             About

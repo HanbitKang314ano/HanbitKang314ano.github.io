@@ -4,10 +4,11 @@ import styled from 'styled-components';
   
 export const Nav = styled.nav`
   position: sticky;
-  top: 8px;
+  top: 30px;
+  bottom: 30px;
   left: 0;
-  background: #FCE5CD;
-  height: 85px;
+  background: #232B2B;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
@@ -17,7 +18,7 @@ export const Nav = styled.nav`
 `;
   
 export const NavLink = styled(Link)`
-  color: #E69138;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -25,7 +26,10 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #783f04;
+    color: #FFFFFF;
+  }
+  &:hover {
+    background-color: #1A2421;
   }
   font-family: Courier, monospace;
 `;
