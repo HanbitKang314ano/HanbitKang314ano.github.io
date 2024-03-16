@@ -4,26 +4,22 @@ import styled from 'styled-components';
   
 export const Nav = styled.nav`
   position: sticky;
-  top: 30px;
-  bottom: 30px;
-  left: 0;
+  top: 0;
   background: #232B2B;
-  height: 50px;
+  width: 100vw;
+  height: 110px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  justify-content: center;
   z-index: 12;
-  /* Third Nav */
-  /* justify-content: flex-start; */
+  font-family: Courier, monospace;
 `;
   
 export const NavLink = styled(Link)`
   color: #FFFFFF;
-  display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 50%;
   cursor: pointer;
   &.active {
     color: #FFFFFF;
@@ -31,6 +27,14 @@ export const NavLink = styled(Link)`
   &:hover {
     background-color: #1A2421;
   }
+  &:first-child {
+    margin-right: auto; /* Move the leftmost NavLink to the left */
+  }
+
+  &:last-child {
+    margin-left: auto; /* Move the rightmost NavLink to the right */
+  }
+
   font-family: Courier, monospace;
 `;
   
@@ -50,13 +54,7 @@ export const Bars = styled(FaBars)`
   
 export const NavMenu = styled.div`
   display: flex;
-  align-items: center;
-  margin-right: -24px; 
-  /* Second Nav */
-  /* margin-right: 24px; */
-  /* Third Nav */
-  /* width: 100vw;
-  white-space: nowrap; */
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -91,5 +89,5 @@ export const NavBtnLink = styled(Link)`
     background: #fff;
     color: #E69138;
   }
-  font-family: Courier, monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
 `;
