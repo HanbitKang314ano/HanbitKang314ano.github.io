@@ -29,7 +29,9 @@ const Events = () => {
 				justifyContent: 'Left',
 				alignItems: 'Left',
 				height: '100vh',
-				fontFamily: 'Courier, monospace'
+				fontFamily: 'Courier, monospace',
+				marginLeft: '50px',
+				color: 'white'
 			}}
 		>
 			<div

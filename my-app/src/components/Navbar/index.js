@@ -11,13 +11,14 @@ import {
 const Navbar = () => {
   return (
     <>
-      <Nav>
-        <Bars />
-        
-        <NavMenu>
+      <Nav style={{marginLeft: '0px'}} >
+        <NavMenu style={{ position: 'relative', marginRight: 'auto' }}>
           <NavLink to="/">
             Hanbit Kang
           </NavLink>
+        </NavMenu>
+
+        <NavMenu style={{ position: 'relative', justifyContent: 'center' }}>
           <NavLink to='/about'>
             About
           </NavLink>
@@ -33,6 +34,9 @@ const Navbar = () => {
           <NavLink to='/resume'>
             Resume/Experience
           </NavLink>
+        </NavMenu>
+
+        <NavMenu style={{ position: 'relative', marginLeft: 'auto' }}>
           <NavLink to='/feedbacks'>
             Feedbacks
           </NavLink>

@@ -7,32 +7,28 @@ export const Nav = styled.nav`
   top: 0;
   background: #232B2B;
   width: 100vw;
-  height: 110px;
+  height: 75px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  alignItems: 'center';
   z-index: 12;
   font-family: Courier, monospace;
 `;
   
 export const NavLink = styled(Link)`
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  
   text-decoration: none;
   padding: 0 1rem;
-  height: 50%;
   cursor: pointer;
   &.active {
     color: #FFFFFF;
   }
   &:hover {
     background-color: #1A2421;
-  }
-  &:first-child {
-    margin-right: auto; /* Move the leftmost NavLink to the left */
-  }
-
-  &:last-child {
-    margin-left: auto; /* Move the rightmost NavLink to the right */
   }
 
   font-family: Courier, monospace;

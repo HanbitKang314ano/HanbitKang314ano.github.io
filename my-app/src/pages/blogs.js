@@ -20,6 +20,8 @@ return (
 					width: '70vw',
 					height: '100vh',
 					fontFamily: 'Courier, monospace',
+					marginLeft: '50px',
+					color: 'white'
 				}}
 				>
 				<h1>Here are some things that I write for fun...</h1>

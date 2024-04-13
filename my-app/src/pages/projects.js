@@ -18,7 +18,9 @@ const Projects = () => {
 				justifyContent: 'Left',
 				alignItems: 'Left',
 				height: '100vh',
-				fontFamily: 'Courier, monospace'
+				fontFamily: 'Courier, monospace',
+				marginLeft: '50px',
+				color: 'white'
 			}}
 		>
 			<div
@@ -56,20 +58,22 @@ const Projects = () => {
 					</div>
 				</div>
 				*/}
-				<p>(place the sudoku solver program here, if possible... the sudoku is still in the making... 
-					there are already many recursive/backtracking and brute force solving algorithms that exist online, so i am trying to create a new algorithm that uses algorithms
-					that people would use to actually solve the sudoku)</p>
+				<p>(the sudoku is still in the making... 
+					there are already many recursive/backtracking and brute force solving algorithms that exist online, so i am trying to create a new algorithm that optimally uses practical methods
+					people use to actually solve the sudoku)</p>
 				<br/>
 				<h2> Give n Share (Senior Capstone) </h2>
 				<p>(place the Give n Share mobile app visual here (if possible))</p>
 				<br/>
 				<h2> My Portfolio </h2>
-				<p style={{textIndent: '50px'}}>
-					This website is my portfolio! I used React as my main frontend code and github pages as my deployment service. 
+				<p>
+					This website is my portfolio! <br/>
+					I used React as my main frontend code and Vercel as my deployment service. <br/>
+					Recently switched from Github pages to Vercel to enable backend services. <br/>
 					I have no backend implementation at the moment.
 				</p>
 				<p style={{textIndent: '50px'}}>
-					This is the link to my github repository of the code that I am working with: <a href="https://github.com/HanbitKang314ano/mywebsite">Github Repo</a>
+					This is the link to my github repository of the code that I am working with: <a href="https://github.com/HanbitKang314ano/mywebsite" style={{color: 'skyblue'}}>Github Repo</a>
 				</p>
 			</div>
 			<div style={{ margin: '50px' }}>
