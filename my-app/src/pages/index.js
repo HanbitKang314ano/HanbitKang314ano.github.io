@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
 import profile_picture from '../images/intro_pic.jpg';
+/*
 import {
     NavLink,
-  } from '../components/Navbar/NavbarElements';
+} from '../components/Navbar/NavbarElements';
+*/
 
 const Home = () => {
     useEffect(() => {
