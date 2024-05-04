@@ -8,6 +8,9 @@ import java_logo from '../images/java_logo.png';
 import python_logo from '../images/python_logo.png';
 import html_logo from '../images/html_logo.png';
 import react_logo from '../images/react_logo.png';
+import givenshare_login from '../images/GivenShareLogin.png';
+import givenshare_menu from '../images/GivenShareMenu.png';
+import givenshare_map from '../images/GivenShareMap.png';
 
 const About = () => {
 return (
@@ -20,6 +23,7 @@ return (
 		height: '100vh',
 		fontFamily: 'Courier, monospace',
 		marginLeft: '50px',
+		marginRight: '50px',
 		color: 'white'
 	}}
 	>
@@ -45,20 +49,20 @@ return (
 			}}
 			>
 			<p>
-				My name is Hanbit Kang and I graduated from Texas A&M University in 2023 with a B.S. degree in Computer Science, currently working as a Quantity Surveyor at Samsung E&C Amercica Inc. in Taylor, Texas.
+				My name is Hanbit Kang and I graduated from <b>Texas A&M University</b> in 2023 with a B.S. degree in <b>Computer Science</b>, currently working as a <b>Quantity Surveyor</b> at <b>Samsung E&C Amercica Inc.</b> in Taylor, Texas.
 			</p>
 			<p>
-				I am currently looking for Software Engineering position with interests also in being a Front-End Developer, Back-End Developer, and Database Developer. 
-				As a college graduate in Computer Science with summer internship at Arbin Instruments and 2 years of research at Texas A&M University behind my back, 
+				I am currently looking for <b>Software Engineering</b> position with interests also in being a Front-End Developer, Back-End Developer, and Database Developer. 
+				As a college graduate in Computer Science with summer internship at Arbin Instruments and 2 years of <b>research at Texas A&M University</b> behind my back, 
 				I am confident that I will be a great asset to the team.
 			</p>
 			<p>
-				I have had the amazing opportunity to be a Software Engineer Intern at Arbin Instruments for the whole duration of summer 2022. 
-				As a Software Engineer Intern, I have demonstrated solid knowledge and skills in C# using .NET Framework. 
+				I have had the amazing opportunity to be a <b>Software Engineer Intern at Arbin Instruments</b> for the whole duration of summer 2022. 
+				As a Software Engineer Intern, I have demonstrated solid knowledge and skills in <b>C# using .NET Framework</b>. 
 				I have accomplished two individual projects to provide user-friendly helper functions. 
 				The software I developed, TreeView and FileReader, greatly demonstrate my in-depth understanding of the Recursive Algorithm and OOP design. 
-				In the Spec Sheet Generator Project, I showcased superb capability of problem analyzing, solution providing, and project leading to Arbin’s first fully 
-				automated Specification Generating tool, which makes the quotation process less labor-intensive and eventually leads to improving the scalability and 
+				In the Spec Sheet Generator Project, I showcased superb capability of problem analyzing, solution providing, and project leading to <b>Arbin’s first fully 
+				automated Specification Generating tool</b>, which makes the quotation process less labor-intensive and eventually leads to improving the scalability and 
 				reliability of Arbin’s documentation. 
 				I believe that my internship projects, research, and coding experiences will help me to excel in your program.
 			</p>
@@ -95,6 +99,9 @@ return (
 		color: 'white'
 	}}
 	>
+		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_login} />
+		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_menu} />
+		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_map} />
 		<div
 			style={{
 				display: 'flex',
@@ -106,31 +113,27 @@ return (
 			}}
 			>
 			<p>
-				I have learned many coding languages such as C++, C#, Java, Python, HTML, and React, and taken courses such as Software Engineering and Design Analysis 
+				I have learned many coding languages such as <b>C++, C#, Java, Python, HTML, and React</b>, and taken courses such as Software Engineering and Design Analysis 
 				Algorithms at Texas A&M University, allowing me to be very familiar with the Agile and Waterfall development process. 
-				I have also worked as a student technician at Texas A&M University for two years, doing research under Professor Dilma Da Silva on the aspect of serverless cloud 
-				computing and Professor Yoonsuck Choe on the aspect of analyzing weights of a convolutional neural network model on a texture dataset.
+				I have also worked as a <b>student technician at Texas A&M University</b> for two years, doing research under Professor Dilma Da Silva on the aspect of <b>serverless cloud 
+				computing</b> and Professor Yoonsuck Choe on the aspect of analyzing weights of a <b>convolutional neural network model</b> on a texture dataset.
 			</p>
 			<p>
 				Throughout the school course of Senior Capstone, I have gained a strong knowledge of the software development lifecycles from beginning to end. 
-				I have worked with my amazing team as the main frontend developer to create a mobile app using React Native for our sponsor Continuum Inc. where users can give 
+				I have worked with my amazing team as the main frontend developer to create a mobile app called "Give n' Share" using <b>React Native</b> for our sponsor Continuum Inc. where users can give 
 				and request items to/from other users with the intention of increasing sustainability. 
-				We had multiple sprints, each consisting of various user story tasks for each team member, pair programming, continuous deployment, maintenance, and project 
-				turnover.
+				We had multiple sprints, each consisting of various <b>user story tasks for each team member, pair programming, continuous deployment, maintenance, and project 
+				turnover</b>.
 			</p>
 			<p>
 				I am confident that my experiences in software engineering, excellent academic work ethic, and excitement to work will be of great benefit to the team. 
 				I look forward to being in contact with you!
 			</p>
 			<p>
-				Some of my hobbies include making music, playing instruments, coding (just for fun), and hanging out friends. Usual hangout times would consist of eating together, then getting boba or coffee, and chilling anywhere that seems relaxing to talk.
-				I like to sometimes to play games with others, whether that be video games, board games, or just physical activities like volleyball and tennis.
+				Some of my hobbies include making music, playing instruments, coding (just for fun), and hanging out friends.
+				I like to play games with others, whether that be video games, board games, or just physical activities like volleyball and tennis.
 			</p>
 		</div>
-		{/*
-		<img style={{ aspectRatio: 3/4, maxWidth: '30%', maxHeight: '50%', float: 'right', margin: '50px' }} src={hanbit_aggie_ring} />
-		<img style={{ aspectRatio: 3/4, maxWidth: '30%', maxHeight: '50%', float: 'right', margin: '50px' }} src={arbin_logo} />
-		*/}
 	</div>
 	</div>
 );

@@ -4,7 +4,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 
 
 const Events = () => {
-	const [eventTitle, setEventTitle] = useState('click one on the calendar to view...');
+	const [eventTitle, setEventTitle] = useState('click an item on the calendar to view description');
 
 	function renderEventContent(eventInfo) {
 		return (
@@ -40,12 +40,12 @@ const Events = () => {
 					flexDirection: 'column',
 					justifyContent: 'Left',
 					alignItems: 'Left',
-					width: '70vw',
+					width: '90vw',
 					height: '100vh',
 					fontFamily: 'Courier, monospace'
 				}}
 				>
-				<h1>Here are some things that I'm working on in this website...</h1>
+				<h1>Here are some things in this website I'm working on...</h1>
 				<FullCalendar
 					plugins={[dayGridPlugin]}
 					initialView='dayGridMonth'
@@ -62,6 +62,7 @@ const Events = () => {
 					justifyContent: 'Left',
 					alignItems: 'Left',
 					height: '100vh',
+					width: '50vw',
 					fontFamily: 'Courier, monospace'
 				}}
 				>
@@ -71,6 +72,7 @@ const Events = () => {
 				</div>
 				<div style={{ margin: '50px' }}>
 					<b> Future tasks: </b>
+					<p>- Finalize Frontend Rough Draft</p>
 					<p>- Create Sudoku Solver Project</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
 					<p>- Better Website Styling, Design, and Structure</p>
@@ -93,7 +95,14 @@ const events = [
 	{ title: 'Create Resume page (DONE)', allDay: true, start: new Date("2023-07-11 00:00:00") },
 	{ title: 'Upload Resume (DONE)', allDay: true, start: new Date("2023-07-11 00:00:00") },
 	{ title: 'Write Experiences (DONE)', allDay: true, start: new Date("2023-07-14 00:00:00") },
-	{ title: 'Deploy Sudoku Project', allDay: true, start: new Date("2023-07-23 00:00:00") },
+	{ title: 'Finish About Page (DONE)', allDay: true, start: new Date("2024-05-04 00:00:00") },
+	{ title: 'Finish Events Page (DONE)', allDay: true, start: new Date("2024-05-04 00:01:00") },
+	{ title: 'Start Projects Page (DONE)', allDay: true, start: new Date("2024-05-04 00:02:00") },
+	{ title: 'Continue Projects Page (Get Some Form of Backend Uploaded)', allDay: true, start: new Date("2024-05-11 00:00:00") },
+	{ title: 'Finish Projects Page', allDay: true, start: new Date("2024-05-18 00:00:00") },
+	{ title: 'Finish Blog Page', allDay: true, start: new Date("2024-05-18 00:01:00") },
+	{ title: 'Finish Resume/Experience Page', allDay: true, start: new Date("2024-05-25 00:00:00") },
+	{ title: 'Finish Feedbacks Page', allDay: true, start: new Date("2024-05-25 00:01:00") },
 ]
 
 export default Events;
