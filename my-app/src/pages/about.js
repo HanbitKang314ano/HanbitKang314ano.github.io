@@ -11,43 +11,58 @@ import react_logo from '../images/react_logo.png';
 import givenshare_login from '../images/GivenShareLogin.png';
 import givenshare_menu from '../images/GivenShareMenu.png';
 import givenshare_map from '../images/GivenShareMap.png';
+import givenshare1 from '../images/GivenShareGroup1.jpg';
 
 const About = () => {
 return (
 	<div
-	style={{
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'Left',
-		alignItems: 'Left',
-		height: '100vh',
-		fontFamily: 'Courier, monospace',
-		marginLeft: '50px',
-		marginRight: '50px',
-		color: 'white'
-	}}
+		style={{
+			display: 'flex',
+			flexDirection: 'column',
+			justifyContent: 'Left',
+			alignItems: 'Left',
+			minHeight: '100vh',
+			fontFamily: 'Courier, monospace',
+			marginLeft: '50px',
+			marginRight: '50px',
+			color: 'white',
+			overflowX: 'hidden', // Hides horizontal overflow
+            maxHeight: '100vh', // Set a maximum height to prevent vertical stretching
+            minWidth: '1200px', // Minimum width set to 70% of 2880px
+		}}
 	>
+		<style>
+			{`
+				@media (max-width: 70%) {
+					div {
+						overflowX: 'auto'; // Allows horizontal scrolling when content overflows
+						maxHeight: '100vh'; // Keeps the height fixed
+					}
+				}
+			`}
+		</style>
 	<h1>Some things about me...</h1>
 	<div
-		style={{
-		display: 'flex',
-		justifyContent: 'Left',
-		alignItems: 'Left',
-		height: '50vh',
-		fontFamily: 'Courier, monospace',
-		color: 'white'
-	}}
-	>
+        style={{
+            display: 'flex',
+            justifyContent: 'Left',
+            alignItems: 'Left',
+            fontFamily: 'Courier, monospace',
+            color: 'white',
+            marginTop: '20px',
+            overflowWrap: 'break-word',
+            overflow: 'visible',
+        }}
+    >
 		<div
 			style={{
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'left',
-				width: '50vw',
+				flex: '0 1 50%', // Takes up to 70% of the space, flex-shrink is allowed
 				fontFamily: 'Courier, monospace',
-				color: 'white'
+				color: 'white',
+				overflowWrap: 'break-word',
+				overflow: 'visible',
 			}}
-			>
+		>
 			<p>
 				My name is Hanbit Kang and I graduated from <b>Texas A&M University</b> in 2023 with a B.S. degree in <b>Computer Science</b>, currently working as a <b>Quantity Surveyor</b> at <b>Samsung E&C Amercica Inc.</b> in Taylor, Texas.
 			</p>
@@ -61,55 +76,80 @@ return (
 				As a Software Engineer Intern, I have demonstrated solid knowledge and skills in <b>C# using .NET Framework</b>. 
 				I have accomplished two individual projects to provide user-friendly helper functions. 
 				The software I developed, TreeView and FileReader, greatly demonstrate my in-depth understanding of the Recursive Algorithm and OOP design. 
-				In the Spec Sheet Generator Project, I showcased superb capability of problem analyzing, solution providing, and project leading to <b>Arbin’s first fully 
+				In the Spec Sheet Generator Project, I showcased superb capability of problem analyzing, solution providing, and project leading to <b>Arbin's first fully 
 				automated Specification Generating tool</b>, which makes the quotation process less labor-intensive and eventually leads to improving the scalability and 
-				reliability of Arbin’s documentation. 
+				reliability of Arbin's documentation. 
 				I believe that my internship projects, research, and coding experiences will help me to excel in your program.
 			</p>
 		</div>
-		<img style={{ aspectRatio: 3/4, maxWidth: '30%', maxHeight: '100%', float: 'right', margin: '50px' }} src={hanbit_aggie_ring} />
-		<img style={{ aspectRatio: 3/4, maxWidth: '30%', maxHeight: '100%', float: 'right', margin: '50px' }} src={arbin_logo} />
+		<div
+			style={{
+				flex: '0 1 50%', // Takes up to 30% of the space, flex-shrink is allowed
+				display: 'flex',
+				flexDirection: 'row', // Aligns children (images) in a row horizontally
+				alignItems: 'center', // Center-aligns the images vertically within the container
+				justifyContent: 'space-around', // Distributes space around items for even spacing
+				marginTop: '20px',
+				marginBottom: '20px',
+			}}
+		>
+			<img style={{ width: '45%', height: 'auto', objectFit: 'contain' }} src={hanbit_aggie_ring} />
+			<img style={{ width: '45%', height: 'auto', objectFit: 'contain' }} src={arbin_logo} />
+		</div>
 	</div>
 
 	<div
 		style={{
-		display: 'flex',
-		justifyContent: 'center',
-		alignItems: 'center',
-		height: '100vh',
-		fontFamily: 'Courier, monospace',
-		color: 'white'
-	}}
+			display: 'flex',
+			justifyContent: 'center',
+			alignItems: 'center',
+			fontFamily: 'Courier, monospace',
+			color: 'white',
+			flexWrap: 'wrap', // Allows items to wrap if needed
+		}}
 	>
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px'}} src={dotnet_framework_logo} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={csharp_logo} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={cplus_plus} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={java_logo} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={python_logo} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={html_logo} />
-	<img style={{ maxWidth: '10%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={react_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px'}} src={dotnet_framework_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={csharp_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={cplus_plus} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={java_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={python_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={html_logo} />
+	<img style={{ maxWidth: '5%', maxHeight: '30%', float: 'right', marginLeft: '40px', marginRight: '40px' }} src={react_logo} />
 	</div>
 	<div
 		style={{
-		display: 'flex',
-		justifyContent: 'Left',
-		alignItems: 'Left',
-		height: '100vh',
-		fontFamily: 'Courier, monospace',
-		color: 'white'
-	}}
+            display: 'flex',
+            justifyContent: 'Left',
+            alignItems: 'Left',
+            fontFamily: 'Courier, monospace',
+            color: 'white',
+            marginTop: '20px',
+            overflowWrap: 'break-word',
+            overflow: 'visible',
+        }}
 	>
-		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_login} />
-		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_menu} />
-		<img style={{ aspectRatio: 1/2.1, maxWidth: '30%', maxHeight: '70%', float: 'right', margin: '20px' }} src={givenshare_map} />
 		<div
 			style={{
+				flex: '0 1 50%', // Takes up to 30% of the space, flex-shrink is allowed
 				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'left',
-				width: '50vw',
+				flexDirection: 'row', // Aligns children (images) in a row horizontally
+				alignItems: 'center', // Center-aligns the images vertically within the container
+				justifyContent: 'space-around', // Distributes space around items for even spacing
+				marginTop: '20px',
+				marginBottom: '20px',
+			}}
+		>
+			<img style={{ width: '30%', height: 'auto', objectFit: 'contain' }} src={givenshare_login} />
+			<img style={{ width: '30%', height: 'auto', objectFit: 'contain' }} src={givenshare_menu} />
+			<img style={{ width: '30%', height: 'auto', objectFit: 'contain' }} src={givenshare_map} />
+		</div>
+		<div
+			style={{
+				flex: '0 1 50%', // Takes up to 70% of the space, flex-shrink is allowed
 				fontFamily: 'Courier, monospace',
-				color: 'white'
+				color: 'white',
+				overflowWrap: 'break-word',
+				overflow: 'visible',
 			}}
 			>
 			<p>
@@ -134,6 +174,19 @@ return (
 				I like to play games with others, whether that be video games, board games, or just physical activities like volleyball and tennis.
 			</p>
 		</div>
+	</div>
+	<div
+		style={{
+			flex: '0 1 100%', // Takes up to 30% of the space, flex-shrink is allowed
+			display: 'flex',
+			flexDirection: 'row', // Aligns children (images) in a row horizontally
+			alignItems: 'center', // Center-aligns the images vertically within the container
+			justifyContent: 'space-around', // Distributes space around items for even spacing
+			marginTop: '20px',
+			marginBottom: '20px',
+		}}
+		>
+			<img style={{ width: '70%', height: 'auto', objectFit: 'contain' }} src={givenshare1} />
 	</div>
 	</div>
 );
