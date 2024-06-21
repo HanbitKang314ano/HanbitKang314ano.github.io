@@ -72,7 +72,7 @@ const Projects = () => {
 					Recently switched from Github pages to Vercel to enable backend services. <br/>
 					I have no backend implementation at the moment.
 				</p>
-				<p style={{textIndent: '50px'}}>
+				<p>
 					This is the link to my github repository of the code that I am working with: <a href="https://github.com/HanbitKang314ano/mywebsite" style={{color: 'skyblue'}}>Github Repo</a>
 				</p>
 			</div>
