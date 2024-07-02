@@ -99,10 +99,11 @@ const events = [
 	{ title: 'Finish Events Page (DONE)', allDay: true, start: new Date("2024-05-04 00:01:00") },
 	{ title: 'Start Projects Page (DONE)', allDay: true, start: new Date("2024-05-04 00:02:00") },
 	{ title: 'Fix Frontend Reactivity for About Page and Include Capstone Project Group Picture (DONE)', allDay: true, start: new Date("2024-05-18 00:02:00") },
-	{ title: 'Continue Projects Page (Get Initial Backend Uploaded for APK File)', allDay: true, start: new Date("2024-06-21 00:00:00") },
-	{ title: 'Finish Projects Page', allDay: true, start: new Date("2024-06-22 00:00:00") },
-	{ title: 'Finish Blog Page', allDay: true, start: new Date("2024-06-29 00:00:00") },
-	{ title: 'Finish Resume/Experience Page', allDay: true, start: new Date("2024-06-29 00:01:00") },
+	{ title: 'Continue Projects Page (Set Up Initial Backend)', allDay: true, start: new Date("2024-06-22 00:00:00") },
+	{ title: 'Continue Projects Page', allDay: true, start: new Date("2024-07-02 00:00:00") },
+	{ title: 'Finish Projects Page', allDay: true, start: new Date("2024-07-04 00:00:00") },
+	{ title: 'Finish Blog Page', allDay: true, start: new Date("2024-07-06 00:00:00") },
+	{ title: 'Finish Resume/Experience Page', allDay: true, start: new Date("2024-07-06 00:01:00") },
 	{ title: 'Finish Feedbacks Page', allDay: true, start: new Date("2024-07-06 00:01:00") },
 ]
 

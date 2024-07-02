@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import {PyScriptProvider, PyScript} from 'pyscript-react';
 
 const Projects = () => {
@@ -6,6 +6,11 @@ const Projects = () => {
 	const [input, setInput] = useState("");
 	const [result, setResult] = useState('Submit Code to See Result');
 	const [code, setCode] = useState(""); // GET CODE FROM MY C++ FILE, FIND A WAY TO LOAD IT
+	const [accuracy, setAccuracy] = useState(0)
+
+	useEffect(() => {
+		fetch("/api/ml").then(res => res.json()).then(data => {setAccuracy(data.accuracy)})
+	}, [])
 
 	function onSubmitHandler(eventHandler) {
         
@@ -35,6 +40,11 @@ const Projects = () => {
 				}}
 				>
 				<h1>These are some of the projects I have worked on...</h1>
+				<b style={{ fontSize: 30, color: 'yellow' }}>Basic Backend Output: {accuracy}</b>
+				<p>If the output is 0, then the api call to the backend did not work, but if the output is 1,
+					then it was able to successfully call the backend, run the simple sklearn machine learning code, and
+					get the output of 1.
+				</p>
 				<h2> Sudoku Solver </h2>
 				{/*
 				<div className="col-12 mt-5">
