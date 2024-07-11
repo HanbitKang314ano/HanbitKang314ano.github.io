@@ -1,20 +1,21 @@
 import React, { useState, useEffect} from 'react';
-import {PyScriptProvider, PyScript} from 'pyscript-react';
+import axios from 'axios';
 
 const Projects = () => {
-	const [lang, setLang] = useState("c++");
-	const [input, setInput] = useState("");
-	const [result, setResult] = useState('Submit Code to See Result');
-	const [code, setCode] = useState(""); // GET CODE FROM MY C++ FILE, FIND A WAY TO LOAD IT
-	const [accuracy, setAccuracy] = useState(0)
+	const [data, setData] = useState(null);
 
 	useEffect(() => {
-		fetch("/api/ml").then(res => res.json()).then(data => {setAccuracy(data.accuracy)})
+		const backendURL = process.env.REACT_APP_BACKEND_URL.replace(/\/+$/, ""); // Remove trailing slashes
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`${backendURL}`);
+                setData(response.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
 	}, [])
-
-	function onSubmitHandler(eventHandler) {
-        
-    }
 
 	return (
 		<div
@@ -40,11 +41,8 @@ const Projects = () => {
 				}}
 				>
 				<h1>These are some of the projects I have worked on...</h1>
-				<b style={{ fontSize: 30, color: 'yellow' }}>Basic Backend Output: {accuracy}</b>
-				<p>If the output is 0, then the api call to the backend did not work, but if the output is 1,
-					then it was able to successfully call the backend, run the simple sklearn machine learning code, and
-					get the output of 1.
-				</p>
+				{data ? <p>Data fetched from backend: {JSON.stringify(data)}</p> : 
+					<b>If you see this sentence, then the backend call did not work...</b>}
 				<h2> Sudoku Solver </h2>
 				{/*
 				<div className="col-12 mt-5">
