@@ -1,0 +1,40 @@
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Creates 9 columns */
+    grid-gap: 5px; /* Space between cells */
+    max-width: 500px; /* Adjust based on your preference */
+    margin: auto; /* Center the board horizontally */
+    background-color: #fff; /* Background color of the board */
+    padding: 10px; /* Padding around the board */
+    border: 2px solid #000; /* Border around the entire board */
+}
+
+.sudoku-row {
+    display: contents; /* Ensures rows do not affect the grid */
+}
+
+.sudoku-cell {
+    width: 45px; /* Width of each cell */
+    height: 45px; /* Height of each cell */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border: 1px solid #ddd; /* Border for each cell */
+    background-color: #f9f9f9; /* Background color of each cell */
+    font-size: 20px; /* Font size of the numbers */
+    font-family: 'Courier, monospace'; /* Font style */
+    color: black;
+}
+
+.sudoku-cell.first-column {
+    border-left: 3px solid #000; /* Thicker border for the first column of each block */
+}
+
+/* Add styles for thick borders after every third row and column to denote Sudoku blocks */
+.sudoku-cell:nth-child(3n) {
+    border-right: 3px solid #000;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+    border-bottom: 3px solid #000;
+}

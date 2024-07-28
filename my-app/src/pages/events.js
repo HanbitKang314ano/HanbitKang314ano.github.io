@@ -99,12 +99,11 @@ const events = [
 	{ title: 'Finish Events Page (DONE)', allDay: true, start: new Date("2024-05-04 00:01:00") },
 	{ title: 'Start Projects Page (DONE)', allDay: true, start: new Date("2024-05-04 00:02:00") },
 	{ title: 'Fix Frontend Reactivity for About Page and Include Capstone Project Group Picture (DONE)', allDay: true, start: new Date("2024-05-18 00:02:00") },
-	{ title: 'Continue Projects Page (Set Up Initial Backend)', allDay: true, start: new Date("2024-06-22 00:00:00") },
-	{ title: 'Continue Projects Page', allDay: true, start: new Date("2024-07-02 00:00:00") },
-	{ title: 'Finish Projects Page', allDay: true, start: new Date("2024-07-04 00:00:00") },
-	{ title: 'Finish Blog Page', allDay: true, start: new Date("2024-07-06 00:00:00") },
-	{ title: 'Finish Resume/Experience Page', allDay: true, start: new Date("2024-07-06 00:01:00") },
-	{ title: 'Finish Feedbacks Page', allDay: true, start: new Date("2024-07-06 00:01:00") },
+	{ title: 'Continue Projects Page (Set Up Initial Backend) (DONE)', allDay: true, start: new Date("2024-07-11 00:00:00") },
+	{ title: 'Finish Intial Projects Page (DONE - Sudoku Set Up)', allDay: true, start: new Date("2024-07-27 00:00:00") },
+	{ title: 'Finish Blog Page', allDay: true, start: new Date("2024-07-28 00:00:00") },
+	{ title: 'Finish Resume/Experience Page', allDay: true, start: new Date("2024-07-29 00:01:00") },
+	{ title: 'Finish Feedbacks Page', allDay: true, start: new Date("2024-07-30 00:01:00") },
 ]
 
 export default Events;
