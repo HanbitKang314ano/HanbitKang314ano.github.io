@@ -35,6 +35,9 @@ return (
 				}}
 				>
 				<h1>Resume</h1>
+				<p>
+					Latest Resume on <a href="https://resume.creddle.io/resume/6hr0owqwb79">Creddle</a>
+				</p>
 				<Document file={resumePDF}>
 					<Page pageNumber={1} renderTextLayer={false} className={"pdfPage"}>
 					</Page>
