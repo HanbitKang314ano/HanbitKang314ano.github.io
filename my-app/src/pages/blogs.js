@@ -26,6 +26,21 @@ return (
 				>
 				<h1>Here are some things that I write for fun...</h1>
 				<div style={{ border: '1px solid black', padding: '10px', margin: '20px' }}>
+					<h2>Backend Integration Challenge + Fun</h2>
+					<p style={{ margin: '1px' }}>Date: 7/28/2024</p>
+					<p style={{textIndent: '50px'}}>
+						It has been a while since I have posted anything. I have recently started working more with backend integration with the frontend.
+						For a while, I have been the leading frontend team member in all my projects at school. Through the developement of this website,
+						I have grown an in depth understanding of the backend integration from scratch.
+					</p>
+					<p style={{textIndent: '50px'}}>
+						I have done a few AWS backend cloud integration, but never did I have to set one up for myself. 
+						This gave me a very well understanding of the backend, and I truly enjoyed it! 
+						It felt like solving puzzle pieces and making things all connect in the end.
+						I want to continue to implement this aspect I have learned and continue to implement much more complicated backend calls.
+					</p>
+				</div>
+				<div style={{ border: '1px solid black', padding: '10px', margin: '20px' }}>
 					<h2>First Full Time Job</h2>
 					<p style={{ margin: '1px' }}>Date: 9/3/2023</p>
 					<p style={{textIndent: '50px'}}>
