@@ -29,17 +29,18 @@ return (
 					flexDirection: 'column',
 					justifyContent: 'Left',
 					alignItems: 'Left',
-					width: '50vw',
+					width: '150vw',
 					height: '100vh',
+					minWidth: '600px',
 					fontFamily: 'Courier, monospace'
 				}}
 				>
 				<h1>Resume</h1>
 				<p>
-					Latest Resume on <a href="https://resume.creddle.io/resume/6hr0owqwb79">Creddle</a>
+					Latest Resume on <a href="https://resume.creddle.io/resume/6hr0owqwb79" style={{color: 'black', backgroundColor: 'yellow'}}>Creddle</a>
 				</p>
-				<Document file={resumePDF}>
-					<Page pageNumber={1} renderTextLayer={false} className={"pdfPage"}>
+				<Document file={resumePDF} style={{ width: '80vw' }}>
+					<Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} className={"pdfPage"}>
 					</Page>
 				</Document>
 			</div>
@@ -54,24 +55,27 @@ return (
 				}}
 				>
 				<h1>Experience</h1>
-				<h3>Samsung E&C America, Inc.: Document Controller (QS)</h3>
+				<h3>Samsung E&C America, Inc.: Quantity Surveyor </h3>
 				<p style={{margin: '10px'}}> 
-					- Maintain the quality and progress of the ongoing construction of the Samsung semiconductor manufacturing facility at Taylor.
+					- Manage +4 electrical contractors for the Samsung Austin Semiconductor in Taylor.
 					<br/>
 					<br/>
-					- Currently working with SECAI's clients and contractors to complete Phase 1 of Taylor Semiconductor Construction.
+					- Verify multimillion-dollar change orders from contractors, reviewing all aspects of the proposal.
+					<br/>
+					<br/>
+					- Review lump sum contracted scope of work, contract clarifications, and Contract Sum.
 				</p>
 
 				<h3>Arbin Instruments: Software Engineer Intern</h3>
 				<p style={{margin: '10px'}}> 
-					- Help design code that automates battery specification document as the battery is tested using .NET Framework C#.
-					<br/>
-					<br/>
-					- Developed TreeView and FileReader to demonstrate an in-depth understanding of the Recursive Algorithm and OOP design.
-					<br/>
-					<br/>
-					- Provided solutions to the Spec Sheet Generator Project, leading to Arbin’s first fully automated Specification Generating tool, which
-					makes the quotation process less labor-intensive and eventually leads to improving the scalability and reliability of Arbin’s documentation.
+				- Designed a .NET Framework software using C# for the ‘Spec Sheet Generator Project’.
+				<br/>
+				<br/>
+				- Created Arbin’s first fully automated Specification Generating tool, making it less labor-intensive and improving the scalability 
+				and reliability of Arbin’s documentation.
+				<br/>
+				<br/>
+				- Developed ‘TreeView’ and ‘FileReader’ software to demonstrate an in-depth understanding of the Recursive Algorithm and OOP design.
 				</p>
 		
 				<h3>Texas A&M University: Undergraduate Researcher</h3>
@@ -81,15 +85,20 @@ return (
 				}}
 				>
 					<p style={{width: '100%', margin: '10px'}}> 
-						- Research under Professor Yoonsuck Choe at Texas A&M University, using a convolutional neural network (CNN) to better
-						understand how the receptive fields work.
+						- Researched under Professor Yoonsuck Choe at Texas A&M University.
 						<br/>
 						<br/>
-						- Successfully displayed the differences in model weights from typical image datasets to texture datasets.
+						- Implemented a convolutional neural network (CNN) machine learning algorithm to understand better how receptive fields work.
 						<br/>
 						<br/>
-						- Also researched under Professor Dilma Da Silva at Texas A&M University, the most optimal platform to run a program that focuses on
-						quality output, fast runtime, and effective teamwork using serverless computing, leading to microservices.
+						- Successfully displayed the differences in trained model weights from typical image datasets to texture datasets.
+						<br/>
+						<br/>
+						- Researched under Professor Dilma Da Silva at Texas A&M University.
+						<br/>
+						<br/>
+						- Researched the most optimal platform to run a program focusing on quality output, fast runtime, and effective teamwork using
+						serverless computing, leading to microservices.
 					</p>
 					<div style={{ flexDirection: 'row' }} >
 						<img style={{ aspectRatio: 1, maxWidth: '40%', float: 'left', margin: '10px' }} src={reserach1} alt="reserach1" />
@@ -109,15 +118,13 @@ return (
 				>
 					<img style={{ aspectRatio: 3/4, maxWidth: '30%', float: 'left', margin: '10px' }} src={minuti} alt="minuti" />
 					<p style={{width: '100%', margin: '10px'}}> 
-						- Research under Professor Yoonsuck Choe at Texas A&M University, using a convolutional neural network (CNN) to better
-						understand how the receptive fields work.
-						<br/>
-						<br/>
-						- Successfully displayed the differences in model weights from typical image datasets to texture datasets.
-						<br/>
-						<br/>
-						- Also researched under Professor Dilma Da Silva at Texas A&M University, the most optimal platform to run a program that focuses on
-						quality output, fast runtime, and effective teamwork using serverless computing, leading to microservices.
+					- Prepare and create personalized coffees, drinks, pastries, and gelatos for customers to enjoy.
+					<br/>
+					<br/>
+					- Complete paperwork nightly, calculating deposits and net sales.
+					<br/>
+					<br/>
+					- Manage and train employees effectively to complete orders, prepare pastries, clean equipment, and restock ingredients.
 					</p>
 				</div>
 			</div>

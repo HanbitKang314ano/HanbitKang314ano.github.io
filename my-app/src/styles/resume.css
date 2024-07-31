@@ -13,5 +13,14 @@ a {
     color: #FFF;
 }
 a:hover {
-     color: skyblue;
+    color: skyblue;
+}
+
+
+.a2 {
+    color: #FFF;
+    background-color: yellow;
+}
+.a2:hover {
+    color: skyblue;
 }
