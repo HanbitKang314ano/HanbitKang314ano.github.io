@@ -52,6 +52,20 @@
   width: 100%;
   min-width: 390px;
 }
+.frf-trigger-button .frf-feedback-icon:after {
+  content: "Send Feedback"; /* Always show the text */
+  padding-left: 4px;
+  font-size: inherit; /* Use the inherited font size */
+  opacity: 1; /* Make it fully visible */
+  transition: opacity 0.2s 0s ease, font-size 0.2s 0s ease; /* Keep transitions if needed */
+}
+.frf-trigger-button .frf-feedback-icon-open:after {
+  content: "Close Form"; /* Always show the text when the form is open */
+  padding-left: 4px;
+  font-size: inherit; /* Use the inherited font size */
+  opacity: 1; /* Make it fully visible */
+  transition: opacity 0.2s 0s ease, font-size 0.2s 0s ease; /* Keep transitions if needed */
+}
 .frf-trigger-button .frf-feedback-icon,
 .frf-trigger-button .frf-feedback-icon-open {
   display: flex;
@@ -126,38 +140,8 @@
     transform: translateY(-5px);
   }
 }
-@media (hover: hover) {
-  .frf-trigger-button {
-    transition: opacity 0.2s 0s ease, font-size 0.2s 0.2s ease;
-  }
-  .frf-trigger-button:hover .frf-feedback-icon:after {
-    content: "Send Feedback";
-    margin-left: 8px;
-    font-size: inherit;
-    opacity: 1;
-    transition: font-size 0.2s 0s ease, opacity 0.2s 0s ease;
-  }
-  .frf-trigger-button:hover .frf-feedback-icon-open:after {
-    content: "Close Form";
-    font-size: inherit;
-    opacity: 1;
-    transition: font-size 0.2s 0s ease, opacity 0.2s 0s ease;
-  }
-  .frf-trigger-button .frf-feedback-icon:after {
-    content: "Send Feedback";
-    padding-left: 4px;
-    font-size: 0;
-    opacity: 0;
-    transition: opacity 0.2s 0s ease, font-size 0.2s 0s ease;
-  }
-  .frf-trigger-button .frf-feedback-icon-open:after {
-    content: "Close Form";
-    padding-left: 4px;
-    font-size: 0;
-    opacity: 0;
-    transition: opacity 0.2s 0s ease, font-size 0.2s 0s ease;
-  }
-}
+
+
 
 :-ms-input-placeholder {
   color: rgba(110, 120, 152, 0.6);

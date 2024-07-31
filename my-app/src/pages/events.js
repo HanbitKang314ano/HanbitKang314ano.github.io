@@ -103,7 +103,7 @@ const events = [
 	{ title: 'Finish Intial Projects Page (DONE - Sudoku Set Up)', allDay: true, start: new Date("2024-07-27 00:00:00") },
 	{ title: 'Finish Blog Page (DONE)', allDay: true, start: new Date("2024-07-28 00:00:00") },
 	{ title: 'Finish Resume/Experience Page (DONE)', allDay: true, start: new Date("2024-07-29 00:01:00") },
-	{ title: 'Finish Feedbacks Page', allDay: true, start: new Date("2024-07-30 00:01:00") },
+	{ title: 'Finish Feedbacks Page (DONE)', allDay: true, start: new Date("2024-07-30 00:01:00") },
 	{ title: 'Clean Up on CSS and Styling - Home Page', allDay: true, start: new Date("2024-07-31 00:01:00") },
 	{ title: 'Clean Up on CSS and Styling - About Page', allDay: true, start: new Date("2024-08-01 00:01:00") },
 	{ title: 'Clean Up on CSS and Styling - Events Page', allDay: true, start: new Date("2024-08-02 00:01:00") },
