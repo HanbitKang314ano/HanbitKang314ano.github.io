@@ -36,7 +36,7 @@ const Navbar = () => {
           </NavLink>
         </NavMenu>
 
-        <NavMenu style={{ position: 'relative', marginLeft: 'auto' }}>
+        <NavMenu style={{ position: 'relative', marginLeft: 'auto', marginRight: '15px' }}>
           <NavLink to='/feedbacks'>
             Feedbacks
           </NavLink>

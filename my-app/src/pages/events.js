@@ -72,11 +72,10 @@ const Events = () => {
 				</div>
 				<div style={{ margin: '50px' }}>
 					<b> Future tasks: </b>
-					<p>- Finalize Frontend Rough Draft</p>
-					<p>- Create Sudoku Solver Project</p>
 					<p>- Integrate Sudoku Solver to Portfolio</p>
 					<p>- Better Website Styling, Design, and Structure</p>
 					<p>- Update Readme.md</p>
+					<p>- Move all data related information into a database</p>
 				</div>
 			</div>
 		</div>
@@ -104,12 +103,12 @@ const events = [
 	{ title: 'Finish Blog Page (DONE)', allDay: true, start: new Date("2024-07-28 00:00:00") },
 	{ title: 'Finish Resume/Experience Page (DONE)', allDay: true, start: new Date("2024-07-29 00:01:00") },
 	{ title: 'Finish Feedbacks Page (DONE)', allDay: true, start: new Date("2024-07-30 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - Home Page', allDay: true, start: new Date("2024-07-31 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - About Page', allDay: true, start: new Date("2024-08-01 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - Events Page', allDay: true, start: new Date("2024-08-02 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - Feedback Page', allDay: true, start: new Date("2024-08-03 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - Projects Page', allDay: true, start: new Date("2024-08-04 00:01:00") },
-	{ title: 'Clean Up on CSS and Styling - Resume Page', allDay: true, start: new Date("2024-08-05 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - Home Page', allDay: true, start: new Date("2024-08-01 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - About Page', allDay: true, start: new Date("2024-08-04 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - Events Page', allDay: true, start: new Date("2024-08-05 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - Feedback Page', allDay: true, start: new Date("2024-08-06 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - Projects Page', allDay: true, start: new Date("2024-08-07 00:01:00") },
+	{ title: 'Clean Up on CSS and Styling - Resume Page', allDay: true, start: new Date("2024-08-08 00:01:00") },
 ]
 
 export default Events;
